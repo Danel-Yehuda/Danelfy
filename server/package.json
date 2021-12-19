@@ -2,8 +2,19 @@
   "name": "server",
   "version": "0.0.0",
   "description": "server",
-  "main": "server.js",
+  "main": "index.js",
+  "type": "module",
   "author": {
-    "name": ""
+    "name": "Michael - Danel"
+  },
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "mongoose": "^6.1.2",
+    "nodemon": "^2.0.15"
   }
 }
