@@ -1,26 +1,52 @@
-import { makeStyles } from '@material-ui/core'
+import { makeStyles } from '@material-ui/core/styles';
+import { deepPurple } from '@material-ui/core/colors';
 
-export default makeStyles(()=>({
-    appbar: {
+export default makeStyles((theme) => ({
+    appBar: {
+        width: '100%',
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        padding: '10px 50px',
         backgroundColor: "#4C0070",
-        paddingRight: "79px",
-        paddingLeft: "118px",
     },
     logo: {
         fontFamily: "Work Sans, sans-serif",
         fontWeight: 600,
         color: "#FFFEFE",
         textAlign: "left",
+        textDecoration: 'none',
     },
-    toolbar:{
-        display: "flex",
-        justifyContent: "space-between",
+    image: {
+        marginLeft: '15px',
     },
-    menuButton: {
-        fontFamily: "Open Sans, sans-serif",
-        fontWeight: 700,
-        size: "18px",
-        marginLeft: "38px",
+    toolbar: {
+        display: 'flex',
+        justifyContent: 'flex-end',
+        width: '400px',
     },
-
-}))
+    profile: {
+        display: 'flex',
+        justifyContent: 'space-between',
+        width: '400px',
+    },
+    userName: {
+        display: 'flex',
+        alignItems: 'center',
+    },
+    brandContainer: {
+        display: 'flex',
+        alignItems: 'center',
+    },
+    purple: {
+        color: theme.palette.getContrastText(deepPurple[500]),
+        backgroundColor: deepPurple[500],
+    },
+    signin: {
+        backgroundColor: "#9A0680",
+        color: "white",
+        fontFamily: "Work Sans, sans-serif",
+        fontWeight: 600,
+    }
+    }));
